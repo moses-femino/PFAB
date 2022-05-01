@@ -4,22 +4,22 @@ print(all_low)
 
 all_up = "THIS IS SHOUTING TEXT!"
 print(all_up.lower())
-#.upper and .lower functions
+#.upper and .lower methods
 
 
 print("Mixed Case".isupper())
 print("ALL CAPS!".isupper())
-#.isupper function
+#.isupper method
 
 
 print("AAAHHH!".islower())
 print("$100 is a lot to make in an hour.".islower())
-#.islower function
+#.islower method
 
 
 print("".isupper())
 print("37&8.,?:\"".islower())
-#these functions don't work with special cases
+#these methods don't work with special cases
 
 
 print("SHOUT!".lower().isupper())
@@ -37,7 +37,7 @@ print(" ".isspace())
 print("               ".isspace())
 print("not just spaces".isspace())
 print("not just spaces"[3].isspace())
-#different examples of the .isspace function
+#different examples of the .isspace method
 
 
 print("the great gatsby".title())
@@ -46,7 +46,7 @@ print("the great gatsby".title())
 
 print("this is a string".startswith("this"))
 print("this is a string".startswith("t"))
-#.startswith is a function that allows you to check if the string beginning matches with the arguement 
+#.startswith is a method that allows you to check if the string beginning matches with the arguement 
 
 
 print("".join(["one", "two", "three"]))
@@ -54,9 +54,9 @@ print(" ".join(["one", "two", "three"]))
 print(",".join(["one", "two", "three"]))
 print(", ".join(["one", "two", "three"]))
 print("...".join(["one", "two", "three"]))
-#.join joins together the strings... there are many different ways to use this function
+#.join joins together the strings... there are many different ways to use this method
 
 
 print("Eggs, Milk, Waffles, Bacon".split(", "))
-#the .split function splits up the string
+#the .split method splits up the string
 
