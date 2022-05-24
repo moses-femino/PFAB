@@ -1,11 +1,11 @@
 consoles = {"nintendo": "wii", "microsoft": "xbox", "sony": "playstation"}
 print(consoles["microsoft"])
-#how to access an item in a dictionary
+#how to access the value in a key in a dictionary
 
 val = consoles["microsoft"]
 print(val)
 print("The " + consoles["sony"] + " 5 is Sony's newest gaming console.")
-#other ways to access an item in a dictionary
+#other ways to access the value in a key in a dictionary
 
 mohs_hardness = {9: "corundum", 10: "diamond"}
 floats = {1.23: 1000, 3.14159: 10000, 2.718: 100000}
