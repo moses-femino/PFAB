@@ -1,8 +1,24 @@
 from random import randint
-product = input("Add item to shopping cart(SKU,Description,Unit Price,Quantity)")
-product_list = product.split(",")
 
-print(product_list)
+new_product = {}
+product = ""
+items_list = []
+while product != "Done":
+    product = input("Please enter an item(SKU, description, unit price, quantinty) or Done ")
+    item = product.split(",")
+    print(item)
+    if product != "Done":
+        new_product["sku"] = item[0]
+        new_product["description"] = item[1]
+        new_product["unit_price"] = item[2]
+        new_product["quantity"] = item[3]
+        items_list.append(new_product)
+    
+print("Shopping complete")
+print(items_list)
+
+
+
 """ objects = input("What quantity of this item do you want to purchase")
 
 coupon = randint(10,30)
