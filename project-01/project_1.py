@@ -30,7 +30,6 @@ print("Your subtotal is $" + str(subtotal))
 
 
 """ print("Shopping complete")
-print(item_list)
 print("Congratulations! You have recieived a coupon that will save you " + str(coupon) + "%!")
 print("The sales tax on your order is " + str(sales_tax) + "%.")
 #print("Your subtotal after the discount is " )
