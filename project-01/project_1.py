@@ -26,7 +26,7 @@ for item in item_list:
     #multiply unit_price by quantity for each item and add
     price = float(item["unit_price"]) * int(item["quantity"])
     subtotal = subtotal + price
-print("Your subtotal is $ " + str(subtotal))
+print("Your subtotal is $" + str(subtotal))
 
 
 """ print("Shopping complete")
