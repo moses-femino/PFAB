@@ -1,8 +1,9 @@
-from random import randint
+import random
 
-coupon = randint(10,30)
-sales_tax = randint(6,13)
+coupon = random.randrange(10,31,5)
 
+sales_tax = random.randint(600,1300) / 100
+print(sales_tax)
 product = ""
 item_list = []
 while product != "Done":
@@ -26,14 +27,17 @@ for item in item_list:
     #multiply unit_price by quantity for each item and add
     price = float(item["unit_price"]) * int(item["quantity"])
     subtotal = subtotal + price
+
+#print(subtotal)
+
+discounted_subtotal = subtotal * (1 - coupon / 100)
+taxed_total = discounted_subtotal * (1 + sales_tax / 100)
+
+print("Shopping complete")
 print("Your subtotal is $" + str(subtotal))
-
-
-""" print("Shopping complete")
 print("Congratulations! You have recieived a coupon that will save you " + str(coupon) + "%!")
-print("The sales tax on your order is " + str(sales_tax) + "%.")
-#print("Your subtotal after the discount is " )
-#print("Your subtotal before taxes is ")
-#print("Your total after all discounts and taxes is ")
+print("Your subtotal after the discount is $" + str(round(discounted_subtotal, 2)))
+print("The sales tax on your order today is " + str(sales_tax) + "%")
+print("Your total after all discounts and taxes is $" + str(round(taxed_total, 2)))
 print("Thank you for shopping with us! Have a great day :)")
- """
+ 
